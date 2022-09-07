@@ -9,6 +9,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a { 
+    color: inherit; 
+} 
+
 .container {
     display: flex;
 }
@@ -22,6 +26,10 @@ body {
 
 .image img {
     width: 9rem;
+}
+
+.image .credits {
+    display: flex;
 }
 
 .form {
@@ -42,4 +50,10 @@ div#logo {
 #logo p {
     font-family: norse;
     font-size: 70px;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    margin-top: 37vh;
 }
