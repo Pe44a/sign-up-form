@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="image">
+        <div class="image-section">
             <div id="logo">
                 <img src="../sign-up-form/images/odin-lined.png" alt="odin-lined">
                 <p>ODIN</p>
@@ -19,12 +19,52 @@
                 <p>Photo by <a href="https://unsplash.com/@patresinger">Patrick Langwallner</a></p>
             </div>
         </div>
-        <div class="form">
+        <div class="form-section">
             <div class="header">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
+            
+            <form action="example.com/path" method="post">
+                <legend><h1>Let's do this!</h1></legend>
+        <div class="form">
+
+            <div class="input">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="input">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="input">
+                <label for="phoneNumber">Phone Number</label>
+                <input pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}
+                " type="tel" id="phoneNumber" name="phoneNumber">
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                " type="password" id="password" name="password">
+            </div>
+
+            <div class="input">
+                <label for="passwordCheck">Confirm Password</label>
+                <input pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                " type="password" id="passwordCheck" name="passwordCheck">
+            </div>
+        </div>
+            </form>
+            
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
