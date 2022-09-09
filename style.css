@@ -1,6 +1,6 @@
 @font-face {
     font-family: norse;
-    src: url(../sign-up-form/Font/Norse-Bold\ .otf);
+    src: url(../sign-up-form/font/Norse-Bold\ .otf);
   }
 
 body {
@@ -17,24 +17,21 @@ a {
     display: flex;
 }
 
-.image {
+.image-section {
     height: 100vh;
     width: 35vw;
     background-image: url(../sign-up-form/images/photo-1662384874601-1f6b8b2fab9d.avif);
     color: white;
 }
 
-.image img {
+.image-section img {
     width: 12rem;
 }
 
-.image .credits {
-    display: flex;
-}
-
-.form {
+.form-section {
     height: 100vh;
     width: 65vw;
+    background-color: #dfd4c9;
 }
 
 div #logo {
@@ -49,7 +46,7 @@ div #logo {
 
 #logo p {
     font-family: norse;
-    font-size: 70px;
+    font-size: 4rem;
 }
 
 .credits {
@@ -61,7 +58,64 @@ div #logo {
 .header {
     font-size: 1.4rem;
     font-weight: 700;
-    margin: 3rem;
-    margin-top: 20vh;
-    max-width: min(800px, 100%);
+    padding: 2.5rem;
+    padding-top: 12vh;
+    padding-right: 18vw;
+    max-width: min(1100px, 100%);
+}
+
+form {
+    padding: 2.5rem;  
+    background-color: white;
+}
+
+form button {
+    margin-top: 1.3rem;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(168, 153, 153);
+}
+
+form button:hover {
+    background-color: rgb(165, 131, 131);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: min(50vw, 100%);
+    gap: 1.3rem;
+}
+
+input {
+    border-style: solid;
+    border-radius: 4px;
+    height: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: burlywood;
+    box-shadow: 0 0 2px brown;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+label {
+    font-weight: 600;
+}
+
+.submit {
+    padding: 2.5;
+}
+
+.log-in {
+    margin: 2.5rem;
+    font-weight: 600;
 }
