@@ -17,6 +17,8 @@ a {
     display: flex;
 }
 
+
+/* Left side */
 .image-section {
     height: 100vh;
     width: 35vw;
@@ -55,6 +57,19 @@ div #logo {
     margin-top: 37vh;
 }
 
+/* Right side */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: min(50vw, 100%);
+    gap: 1.3rem;
+}
+
+.form-shadow {
+    box-shadow: 0px 5px 5px #9e9e9e;;
+}
+
 .header {
     font-size: 1.4rem;
     font-weight: 700;
@@ -79,18 +94,6 @@ form button {
 
 form button:hover {
     background-color: rgb(165, 131, 131);
-}
-
-.form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: min(50vw, 100%);
-    gap: 1.3rem;
-}
-
-.form-shadow {
-    box-shadow: 0px 5px 5px #9e9e9e;;
 }
 
 input {
